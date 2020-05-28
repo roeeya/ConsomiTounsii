@@ -1,0 +1,93 @@
+<!--<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" [routerLink]="['/']"><img [src]="imageUrl" alt="casa logo" width="100px"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <form class="form-inline my-2 my-lg-0 ml-auto">
+       
+            <button *ngIf="!isLoggedIn" class="btn btn-info my-2 my-sm-0" [routerLink]="['/login']">Login</button>
+            <button *ngIf="!isLoggedIn" class="btn btn-primary mx-3 my-2 my-sm-0" [routerLink]="['/register']">Register</button>
+            <button *ngIf="isLoggedIn" class="btn btn-danger my-2 my-sm-0" (click)="logout()">Logout</button>
+            <span class="myspan" [routerLink]="['/shopping-cart']">
+                <mat-icon class="icon" [matBadge]="productsInCart" matBadgeColor="warn" matBadgeSize="small">shopping_cart
+                </mat-icon>
+                Panier
+            </span>
+        </form>
+    </div>
+  </nav>-->
+  <!--
+  <mat-toolbar color="primary" class="navbar">
+    <a class="navbar-brand" [routerLink]="['/']"><img [src]="imageUrl" alt="casa logo" width="100px"> </a>
+    <div>
+        <span *ngIf="!isLoggedIn" class="myspan" [routerLink]="['/login']">Login</span>  &nbsp;
+        <span *ngIf="!isLoggedIn" class="myspan" [routerLink]="['/register']">Register</span> &nbsp;
+        <span *ngIf="isLoggedIn" class="myspan" (click)="logout()">Logout</span>
+  
+    </div>
+</mat-toolbar>   --> 
+<!--
+<body class="d-flex flex-column h-100">
+    <header>
+
+  <nav class="navbar navbar-dark bg-primary">
+    <a class="navbar-brand" [routerLink]="['/']"><img [src]="imageUrl" alt="casa logo" width="100px"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+</header>
+-->
+<html>
+    <body>
+<div class="container">
+    <header class="blog-header py-3">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+          <a class="navbar-brand" [routerLink]="['/']"><img [src]="imageUrl" alt="casa logo" width="100px"> </a>
+        </div>
+      
+        <div class="col-4 d-flex justify-content-end align-items-center">
+          <a class="text-muted" href="#" aria-label="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+          </a> &nbsp;
+          <a class="btn btn-sm btn-outline-secondary" [routerLink]="['/register']">Sign up</a> &nbsp; &nbsp; &nbsp;
+          <a class="btn btn-sm btn-outline-secondary" [routerLink]="['/login']">Sign in</a>
+        </div>
+      </div>
+    </header>
+  
+    <div class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted"  [routerLink]="['/home']">Home</a>
+        <a class="p-2 text-muted" [routerLink]="['/attar']">Attar</a>
+        <a class="p-2 text-muted" [routerLink]="['/belle']">Ma belle tunisie</a>
+        <a class="p-2 text-muted" [routerLink]="['/Art']">Art et culture</a>
+        <a class="p-2 text-muted" [routerLink]="['/login']">sign in </a>
+        <a class="p-2 text-muted" [routerLink]="['/register']">sign up</a>
+        <a class="p-2 text-muted" [routerLink]="['/contactus']">contact us</a>
+ 
+      </nav>
+    </div>
+    <hr color="#rgb(7, 6, 6);">
+    
+  
